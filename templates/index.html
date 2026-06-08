@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Dwivedi | Portfolio</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Harshit Dwivedi</h1>
+            <p class="subtitle">
+                Computer Science Student | Python Developer |
+                AI & Machine Learning Enthusiast
+            </p>
+        </header>
+
+        <section class="card">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! I'm Harshit, a Computer Science student with a
+                strong interest in Python, Artificial Intelligence,
+                Machine Learning, and Data Science.
+                I enjoy solving coding problems and building projects
+                that strengthen my programming skills.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Skills</h2>
+
+            <div class="skills">
+                <span>Python</span>
+                <span>C++</span>
+                <span>Flask</span>
+                <span>Pandas</span>
+                <span>Machine Learning</span>
+                <span>Data Science</span>
+                <span>Git & GitHub</span>
+                <span>DSA</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Projects</h2>
+
+            <ul>
+                <li>Calculator CLI Application</li>
+                <li>Console Based To-Do List</li>
+                <li>News Headlines Web Scraper</li>
+                <li>REST API with Flask</li>
+                <li>Sales Data Analysis using Pandas</li>
+            </ul>
+        </section>
+
+        <section class="card">
+
+            <h2>Contact Me</h2>
+
+            <form method="POST">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required>
+
+                <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="Your Message"></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+            <p class="success">{{ message }}</p>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
